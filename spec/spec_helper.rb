@@ -1,9 +1,9 @@
 require 'rspec'
 
 class OofFormatter
-  RSpec::Core::Formatters.register self, :example_failed
+  RSpec::Core::Formatters.register self, :example_finished
 
-  def example_failed
+  def example_finished
     raise 'oof'
   end
 
